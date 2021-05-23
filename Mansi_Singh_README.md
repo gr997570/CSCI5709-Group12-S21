@@ -79,7 +79,7 @@ Below are the steps which were followed to deploy the application using command 
 
 * [Angular](https://angular.io/guide/setup-local) - The frontend framework
 * [Node](https://nodejs.org/en/) - The backend framework 
-* Express (https://www.npmjs.com/package/express) - To create REST API
+* [Express](https://www.npmjs.com/package/express) - To create REST API
 
 ## Sources Used
 
