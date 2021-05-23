@@ -9,7 +9,7 @@ We will develop a peer-mentorship application as our 5709 Group Project. In this
 
 ## Authors
 
-* [Divyansh Vyas] (dv435960@dal.ca) - Collaborator 
+* Divyansh Vyas (dv435960@dal.ca) - Collaborator 
 * [Gurleen Kaur Saluja] (gr997570@dal.ca) - Collaborator
 * [Mansi Singh] (dv435960@dal.ca) - Collaborator
 * [Mohammed Hamza Jasnak] (mh342039@dal.ca) - Collaborator  
@@ -79,7 +79,7 @@ Below are the steps which were followed to deploy the application using command 
 
 * [Angular](https://angular.io/guide/setup-local) - The frontend framework
 * [Node](https://nodejs.org/en/) - The backend framework 
-* [Express] (https://www.npmjs.com/package/express) - To create REST API
+* Express (https://www.npmjs.com/package/express) - To create REST API
 
 ## Sources Used
 
