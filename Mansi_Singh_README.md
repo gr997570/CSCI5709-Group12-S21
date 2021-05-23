@@ -9,11 +9,11 @@ We will develop a peer-mentorship application as our 5709 Group Project. In this
 
 ## Authors
 
-* Divyansh Vyas (dv435960@dal.ca) - Collaborator 
-* [Gurleen Kaur Saluja] (gr997570@dal.ca) - Collaborator
-* [Mansi Singh] (dv435960@dal.ca) - Collaborator
-* [Mohammed Hamza Jasnak] (mh342039@dal.ca) - Collaborator  
-* [Misbah Pathan] (ms358232@dal.ca) - Collaborator
+* [Divyansh Vyas](dv435960@dal.ca) - Collaborator 
+* [Gurleen Kaur Saluja](gr997570@dal.ca) - Collaborator
+* [Mansi Singh](dv435960@dal.ca) - Collaborator
+* [Mohammed Hamza Jasnak](mh342039@dal.ca) - Collaborator  
+* [Misbah Pathan](ms358232@dal.ca) - Collaborator
 
 
 ## Getting Started
@@ -22,7 +22,7 @@ We will develop a peer-mentorship application as our 5709 Group Project. In this
 
 To have a local copy of this lab and running on your local machine, you will first need to install the following software / libraries / plug-ins
 
-````
+```
 Angular CLI: 11.0.3
 Node: 14.15.1
 Express: 4.17.1
@@ -37,7 +37,7 @@ Package                      Version
 @angular-devkit/schematics   11.0.3 (cli-only)
 @schematics/angular          11.0.3 (cli-only)
 @schematics/update           0.1100.3 (cli-only)
-````
+```
 
 See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
