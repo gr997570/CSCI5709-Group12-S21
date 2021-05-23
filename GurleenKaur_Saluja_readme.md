@@ -30,8 +30,6 @@ See the following section for detailed step-by-step instructions on how to insta
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be, assume the marker just acquired a computer
-
 1. Checkout the code from GitHub.
 2. Open CLI on the source package which contains package.json and run npm install to install all the dependencies.	
 3. Run npm start on local. The application should start at port 8080 which is configured in package.json file.
@@ -99,7 +97,7 @@ res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
 app.listen(process.env.PORT || 8080);
 ```
 
-- The code in [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) was implemented by Olutunmbi Banto
+- The code in [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) was implemented/shared by Olutunmbi Banto
 - [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)'s Code was used to refer how to deploy front end application on Heroku and also to understand the role of server.js file.
 - [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)'s Code was modified by Group12-S21.
 
@@ -119,11 +117,11 @@ The code above was created by adapting the code in [ITNEXT](https://itnext.io/ho
 
 ```
 "engines": {
-    "node": "6.11.0",
+	"node": "6.11.0",
 	"npm": "3.10.10"
 }
 ```
 
-- The code in [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) was implemented by Olutunmbi Banto.
+- The code in [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) was implemented/shared by Olutunmbi Banto.
 - [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) Code was used because these versions of node and npm are used by Heroku to run the application on server.
 - [ITNEXT](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147) Code was modified by Group12-S21.
