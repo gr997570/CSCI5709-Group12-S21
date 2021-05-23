@@ -23,10 +23,10 @@ Our teams include below members.
 
 To have a local copy of this lab and running on your local machine, you will first need to install the following software / libraries / plug-ins
 
-Angular CLI: 11.0.3(https://nodejs.org/en/)
-Node: 14.15.1(https://nodejs.org/en/)
-Express: 4.17.1(Using CLI: npm install express)(https://www.npmjs.com/package/express)
-Angular: 11.0.3(Using CLI: npm install -g @angular/cli) (https://angular.io/guide/setup-local)
+Angular CLI: 11.0.3 (https://nodejs.org/en/)
+Node: 14.15.1 (https://nodejs.org/en/)
+Express: 4.17.1 (Using CLI: npm install express)(https://www.npmjs.com/package/express)
+Angular: 11.0.3 (Using CLI: npm install -g @angular/cli) (https://angular.io/guide/setup-local)
 
 
 See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
@@ -39,6 +39,8 @@ See the following section for detailed step-by-step instructions on how to insta
 4. To run the application on local. run "npm start" or "ng serve -o" command.
 
 
+```
+
 Example: The application will show the following content after deployment.
 
 CSCI5709 Group12: the application is running!
@@ -50,6 +52,8 @@ Mansi Singh
 Misbah Pathan
 Divyansh Vyas
 
+
+```
 ## Deployment
 
 Our code has been deployed on heroku and it is available at https://tutorialsample.herokuapp.com/
