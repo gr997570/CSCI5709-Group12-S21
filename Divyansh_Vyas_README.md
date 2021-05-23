@@ -28,7 +28,6 @@ Node: 14.15.1
 Express: 4.17.1
 Angular:
 ...
-Ivy Workspace:
 
 Package                      Version
 ------------------------------------------------------
