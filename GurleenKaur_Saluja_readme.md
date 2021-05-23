@@ -54,11 +54,9 @@ Divyansh Vyas
 
 The below source was referred to deploy our application on Heroku:
 
-1. Tutorial 2 Live lecture:
-(https://ca-lti.bbcollab.com/collab/ui/session/playback/load/dd30a701756b4a5e91b3dcbe2ddb2417)
+1. [Tutorial 2 Live lecture](https://ca-lti.bbcollab.com/collab/ui/session/playback/load/dd30a701756b4a5e91b3dcbe2ddb2417)
 
-2. How to Deploy Angular Application to Heroku
-https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+2. [How to Deploy Angular Application to Heroku](https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
 
 ### server.js
 
