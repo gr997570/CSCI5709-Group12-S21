@@ -13,8 +13,8 @@ Our teams include below members.
 * Divyansh Vyas dv435960@dal.ca - Collaborator 
 * Mohammed Hamza Jasnak mh342039@dal.ca - Collaborator 
 * Gurleen Kaur Saluja gr997570@dal.ca - Collaborator 
-* Mansi Singh dv435960@dal.ca - Collaborator 
-* Misbah Pathan ms358232@dal.ca - Collaborator
+* Mansi Singh mn518448@dal.ca - Collaborator 
+* Misbah Pathan ms358232@dal.ca  - Collaborator
 
 
 ## Getting Started
