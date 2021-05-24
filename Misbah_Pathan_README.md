@@ -6,15 +6,11 @@ We aim to build a peer-mentor an angular web application.
 * *Last Modification Date*: 23 - 05 - 2021
 * *URL*: <https://tutorialsample.herokuapp.com/>
 
-## Authors
-
-The members of our group:
-
-* [Divyansh Vyas](dv435960@dal.ca) - *(Collaborator)*
-* [Mohammed Hamza Jasnak](mh342039@dal.ca) - *(Collaborator)*
-* [Gurleen Kaur Saluja](gr997570@dal.ca) - *(Collaborator)*
-* [Mansi Singh](dv435960@dal.ca) - *(Collaborator)*
-* [Misbah Pathan](ms358232@dal.ca) - *(Collaborator )*
+## Authors  [Misbah Pathan](ms358232@dal.ca) - *(Collaborator )*
+## Group repo link - https://github.com/gr997570/CSCI5709-Group12-S21
+## Application link  - <https://tutorialsample.herokuapp.com/>
+## your branch name - Misbah
+## your branch link - https://github.com/gr997570/CSCI5709-Group12-S21/tree/Misbah
 
 
 ## Getting Started
