@@ -1,20 +1,20 @@
 # Tutorial 2
-We will develop a peer-mentorship application as our 5709 Group Project. In this tutorial, we have completed initial project setup on the Github repository and deployed the same on Heroku.
+We will develop a peer-mentorship application as our 5709 Group Project. All the members of Group 12 collaborated and completed initial project setup on the Github repository and deployed the same on Heroku. This tutorial is submitted by Mansi Singh (B00881430) consisting of the necessary details.
 
 * Date Created: 23 05 2021
-* Last Modification Date: 23 05 2021
+* Last Modification Date: 24 05 2021
 * Github URL: https://github.com/gr997570/CSCI5709-Group12-S21
 * Heroku URL: https://tutorialsample.herokuapp.com/
-
+* Branch name: Mansi
+* Branch link: https://github.com/gr997570/CSCI5709-Group12-S21/tree/Mansi
 
 ## Authors
 
 * [Divyansh Vyas](dv435960@dal.ca) - Collaborator 
 * [Gurleen Kaur Saluja](gr997570@dal.ca) - Collaborator
-* [Mansi Singh](dv435960@dal.ca) - Collaborator
+* [Mansi Singh](mn518448@dal.ca) - Collaborator
 * [Mohammed Hamza Jasnak](mh342039@dal.ca) - Collaborator  
 * [Misbah Pathan](ms358232@dal.ca) - Collaborator
-
 
 ## Getting Started
 
@@ -48,7 +48,7 @@ A step by step series of examples that tell you how to get a development env run
 ```
 1. Clone the repository
 2. Open Command Line Interface in the source package which contains package.json file and execute "npm install" to install all the node dependencies
-3. To run the application on local, run "npm start" or "ng serve -o" command. The application can be accessed at the port which is configured in package.json file.
+3. To run the application on local, run "npm start" or "ng serve -o" command. The application can be accessed at the port which is configured in package.json file in local system.
 ``` 
 Example: The application will show the following content after deployment.
 
@@ -69,11 +69,11 @@ Our code has been deployed on Heroku and it is available at https://tutorialsamp
 
 Below are the steps which were followed to deploy the application using command line interface.
 
-1. Execute `heroic create` to create an app on Heroku
+1. Execute `heroku create` to create an app on Heroku
 2. Run `heroku config:set NPM_CONFIG_PRODUCTION=false` to set the node server configuration
 3. Run `npm run build`
-4. Create a profile to Heroku
-5. Push Github Repo with your changes to Heroku using these commands- `git add Procfile`, `git commit -a -m "Configuration to deploy on Heroku", ` git push heroku master`
+4. Create and complete your profile on Heroku
+5. Push your Github Repo to Heroku using these commands- `git add Procfile`, `git commit -a -m "Configuration to deploy on Heroku", `git push heroku master`
 
 ## Built With
 
