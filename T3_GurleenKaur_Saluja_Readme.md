@@ -50,11 +50,11 @@ Welcome message.
 
 The below sources were referred for this tutorial:
 
-1. [Angular Routing] (https://angular.io/guide/router#getting-route-information)
+1. [Angular Routing](https://angular.io/guide/router#getting-route-information)
 
-2. [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)
+2. [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)
 
-###tutorial3.component.ts
+### tutorial3.component.ts
 Lines 28 - 35
 ---------------
 
@@ -85,13 +85,13 @@ public onTap() {
 }
 ```
 
-- The code by [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) was implemented/shared by Nic Raboy
+- The code by [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) was implemented/shared by Nic Raboy
 
-- [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was used to refer how data can be passed between routes.
+- [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was used to refer how data can be passed between routes.
 
-- [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was modified by Gurleen Kaur Saluja.
+- [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was modified by Gurleen Kaur Saluja.
 
-###profile.component.ts
+### profile.component.ts
 Lines 19 - 23
 ---------------
 
@@ -103,7 +103,7 @@ this.route.queryParams.subscribe(params => {
 });
 ```
 
-The code above was created by adapting the code in [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) as shown below: 
+The code above was created by adapting the code in [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) as shown below: 
 
 ```
 this.route.queryParams.subscribe(params => {
@@ -111,8 +111,8 @@ this.route.queryParams.subscribe(params => {
 });
 ```
 
-- The code by [Angular Routing] (https://angular.io/guide/router#getting-route-information) was implemented/shared by Angular.io
+- The code by [Angular Routing](https://angular.io/guide/router#getting-route-information) was implemented/shared by Angular.io
 
-- [Angular Routing] (https://angular.io/guide/router#getting-route-information)'s code was used to refer how data passed between routes will be fetched in component.
+- [Angular Routing](https://angular.io/guide/router#getting-route-information)'s code was used to refer how data passed between routes will be fetched in component.
 
-- [Angular Routing] (https://angular.io/guide/router#getting-route-information)'s code was modified by Gurleen Kaur Saluja.
+- [Angular Routing](https://angular.io/guide/router#getting-route-information)'s code was modified by Gurleen Kaur Saluja.
