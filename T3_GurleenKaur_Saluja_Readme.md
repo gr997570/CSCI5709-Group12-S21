@@ -15,10 +15,10 @@
 
 To have a local copy of this lab / assingnment / project up and running on your local machine, you will first need to install the following software / libraries / plug-ins
 
-1. Node v6.14.12 (https://nodejs.org/en/)
-2. NPM v14.16.1 (https://nodejs.org/en/)
-3. Angular CLI v11.0.3 (Using CLI: npm install -g @angular/cli) (https://angular.io/guide/setup-local)
-4. Express v14.17.1 (Using CLI: npm install express)(https://www.npmjs.com/package/express)
+1. [Node v6.14.12](https://nodejs.org/en/)
+2. [NPM v14.16.1](https://nodejs.org/en/)
+3. [Angular CLI v11.0.3](https://angular.io/guide/setup-local) (Using CLI: npm install -g @angular/cli)
+4. [Express v14.17.1](https://www.npmjs.com/package/express)  (Using CLI: npm install express)
 
 See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
@@ -71,7 +71,7 @@ onSubmit() {
 }
 ```
 
-The code above was created by adapting the code in [Nic Raboy] (https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) as shown below: 
+The code above was created by adapting the code in [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/) as shown below: 
 
 ```
 public onTap() {
