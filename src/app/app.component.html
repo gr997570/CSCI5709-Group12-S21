@@ -1,39 +1,11 @@
-<div style="padding: 0 16px;margin: 82px 30% 32px;width: 36vw;" role="main">
-
-  <!-- Highlight Card -->
-  <div style="background-color: #1976D2;width: 32vw;margin: 15px;border-radius: 4px;text-align: center;font-weight: 700;padding: 15px; color: aliceblue;">
-    <span>{{ title }}: the application is running!</span>
-
-  </div>
-
-  <div style="background-color: #B4BCAF;width: 32vw;margin: 15px;border-radius: 4px;text-align: center;font-weight: 700;padding: 15px;">
-    <span style="font-size: large;">
-      Group Members
-    </span>
-    <br />
-    <span style="">
-      Mohammed Hamza Jasnak
-    </span>
-    <br />
-    <span style="">
-      Gurleen Kaur Saluja
-    </span>
-    <br />
-    <span style="">
-      Mansi Singh
-    </span>
-    <br />
-    <span style="">
-      Misbah Pathan
-    </span>
-    <br />
-    <span style="">
-      Divyansh Vyas
-    </span>
-
-
-  </div>
-
+<div style="background-color: #1976D2;width: 100%; height: 50px;">
+  <ul>
+    <li style="display:inline;"><a (click)="hide()" routerLink="/tutorial2" routerLinkActive="active" style="padding: 10px;color: aliceblue;line-height:45px;text-decoration:none;">Tutorial 2</a></li>
+    <li style="display:inline;"><a (click)="hide()" routerLink="/tutorial3" routerLinkActive="active" style="text-align:right; padding: 10px; color: aliceblue;text-decoration:none;">Tutorial 3</a></li>
+    <li style="display:inline;"><a (click)="show()" routerLink="/" routerLinkActive="active" style="text-align:right; padding: 10px; color: aliceblue;text-decoration:none;">Exit</a></li>
+  </ul>
 </div>
-
+<div *ngIf="general">
+  <p style="font-weight:700;"> All tutorials for CSCI5709 S21 are listed here. </p>
+</div>
 <router-outlet></router-outlet>

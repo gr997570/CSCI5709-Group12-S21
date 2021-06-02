@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CSCI5709 Group12';
+  title = 'CSCI5709 S21';
+  general: boolean = true;
+
+  hide(){
+    this.general = false;
+  }
+
+  show(){
+    this.general = true;
+  }
 }
