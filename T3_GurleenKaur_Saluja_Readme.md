@@ -54,6 +54,8 @@ The below sources were referred for this tutorial:
 
 2. [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)
 
+3. [Jason Watmore](https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example)
+
 ### tutorial3.component.ts
 Lines 28 - 35
 ---------------
@@ -90,6 +92,53 @@ public onTap() {
 - [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was used to refer how data can be passed between routes.
 
 - [Nic Raboy](https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/)'s code was modified by Gurleen Kaur Saluja.
+
+
+```
+function matchPassword(password: string, cpassword: string) {
+  return (formGroup: FormGroup) => {
+    if (formGroup.controls[cpassword]?.errors && !formGroup.controls[cpassword].errors?.nomatch) {
+      return;
+    }
+    if(formGroup.controls[password].value !== formGroup.controls[cpassword].value){
+      formGroup.controls[cpassword].setErrors({nomatch: true});
+    }
+    else
+      formGroup.controls[cpassword].setErrors(null);
+  };
+}
+```
+
+The code above was created by adapting the code in [Jason Watmore](https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example) as shown below: 
+
+
+```
+export function MustMatch(controlName: string, matchingControlName: string) {
+    return (formGroup: FormGroup) => {
+        const control = formGroup.controls[controlName];
+        const matchingControl = formGroup.controls[matchingControlName];
+
+        if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+            // return if another validator has already found an error on the matchingControl
+            return;
+        }
+
+        // set error on matchingControl if validation fails
+        if (control.value !== matchingControl.value) {
+            matchingControl.setErrors({ mustMatch: true });
+        } else {
+            matchingControl.setErrors(null);
+        }
+    }
+}
+```
+
+- The code by [Jason Watmore](https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example) was implemented/shared by Nic Raboy
+
+- [Jason Watmore](https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example)'s code was used to understand the implementation of custom validators.
+
+- [Jason Watmore](https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example)'s code was modified by Gurleen Kaur Saluja.
+
 
 ### profile.component.ts
 Lines 19 - 23

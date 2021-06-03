@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { RxwebValidators } from "@rxweb/reactive-form-validators";
+import { AbstractControl, FormBuilder, Validators, FormGroup, ValidatorFn, ValidationErrors } from '@angular/forms';
 import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
@@ -17,9 +16,9 @@ export class Tutorial3Component implements OnInit {
       fname: ["", [Validators.required, Validators.pattern('^[A-Za-z0-9 ]+$')]],
       lname: ["", [Validators.required, Validators.pattern('^[A-Za-z0-9 ]+$')]],
       email: ["", [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
-      password: ["", [Validators.required, Validators.minLength(8), Validators.pattern('^[A-Za-z0-9!@$&#%*^]+$')]],//'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$')]],
-      cpassword: ["", [Validators.required, RxwebValidators.compare({fieldName: 'password'})]]
-    });
+      password: ["", [Validators.required, Validators.minLength(8), Validators.pattern('^[A-Za-z0-9!@$&#%*^]+$')]],
+      cpassword: ["", [Validators.required]]
+    }, {validator: matchPassword("password", "cpassword")});
   }
 
   ngOnInit() {}
@@ -35,3 +34,31 @@ export class Tutorial3Component implements OnInit {
     this.router.navigate(["/profile"], formFields);
   }
 }
+
+function matchPassword(password: string, cpassword: string) {
+  return (formGroup: FormGroup) => {
+    if (formGroup.controls[cpassword]?.errors && !formGroup.controls[cpassword].errors?.nomatch) {
+      return;
+    }
+    if(formGroup.controls[password].value !== formGroup.controls[cpassword].value){
+      formGroup.controls[cpassword].setErrors({nomatch: true});
+    }
+    else
+      formGroup.controls[cpassword].setErrors(null);
+  };
+}
+
+/*function matchPassword(password: string, cpassword: string) {
+    return (formGroup: FormGroup) => {
+        const control = formGroup.controls[password];
+        const matchingControl = formGroup.controls[cpassword];
+        if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+          return;
+        }
+        if (control.value !== matchingControl.value) {
+            matchingControl.setErrors({ nomatch: true });
+        } else {
+            matchingControl.setErrors(null);
+        }
+    }
+}*/

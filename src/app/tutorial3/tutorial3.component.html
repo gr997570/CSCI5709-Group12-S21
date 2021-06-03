@@ -45,7 +45,7 @@
       <input type="password" id="cpassword" name="cpassword" formControlName="cpassword" placeholder="Confirm Password" style="width:32vw;line-height:25px; border-radius: 4px; font-weight: 700;border-color: #B4BCAF;"/>
       <div *ngIf="(loginForm.get('cpassword').invalid && (loginForm.get('cpassword').touched) || loginForm.get('cpassword').dirty)">
         <small *ngIf="loginForm.controls['cpassword'].errors?.required" style="color: red;">Confirm Password is required</small><br>
-        <small *ngIf="loginForm.controls['cpassword'].errors?.compare" style="color: red;">Passwords do not match</small>
+        <small *ngIf="loginForm.controls['cpassword'].errors?.nomatch" style="color: red;">Passwords do not match</small>
       </div>
       </div>
       <br>
