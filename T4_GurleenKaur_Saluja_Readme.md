@@ -121,8 +121,8 @@ transform(list: any[], filterText: string): any {
 
 - [Edupala - Angular Filter](https://edupala.com/how-to-implement-an-angular-search-filter-in-angular/)'s code was modified by Gurleen Kaur Saluja.
 
-### users.componenet.ts
-Lines 19 - 23
+### users.component.ts
+Lines 34 - 36
 ---------------
 
 ```
