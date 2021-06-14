@@ -3,6 +3,7 @@ import { UserserviceService } from '../../services/tutorial4/userservice.service
 import { UserProfile } from '../../tutorial4/users/user-profile';
 import { Router, NavigationExtras } from '@angular/router';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-users',

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../../services/tutorial4/userservice.service';
 import { ActivatedRoute } from '@angular/router';
 import { UserProfile } from '../../tutorial4/users/user-profile';
+import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-user-profile',
