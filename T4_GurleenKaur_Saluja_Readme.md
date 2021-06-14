@@ -177,6 +177,6 @@ checkLogin(url: string): true|UrlTree {
 
 - The code by [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards) was implemented/shared by Angular IO.
 
-- [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)'s code was used to refer guard child routes from unauthorized access.
+- [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)'s code was used to refer how to guard child routes from unauthorized access.
 
 - [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)'s code was modified by Gurleen Kaur Saluja.
