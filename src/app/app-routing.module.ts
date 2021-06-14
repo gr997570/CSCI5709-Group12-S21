@@ -6,14 +6,15 @@ import { ProfileComponent } from './tutorial3/profile/profile.component';
 import { Tutorial4Component } from './tutorial4/tutorial4.component';
 import { UsersComponent } from './tutorial4/users/users.component';
 import { UserProfileComponent } from './tutorial4/user-profile/user-profile.component';
+import { AuthguardGuard } from './tutorial4/authguard.guard';
 
 const routes: Routes = [
   {path: 'tutorial2', component: Tutorial2Component},
   {path: 'tutorial3', component: Tutorial3Component},
   {path: 'profile', component: ProfileComponent},
   {path: 'tutorial4', component: Tutorial4Component},
-  {path: 'users', component: UsersComponent},
-  {path: 'users/:id', component: UserProfileComponent},
+  {path: 'users', component: UsersComponent, canActivate: [AuthguardGuard]},
+  {path: 'users/:id', component: UserProfileComponent, canActivate: [AuthguardGuard]},
 ];
 
 @NgModule({

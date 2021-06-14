@@ -12,10 +12,12 @@ export class AuthServiceService {
   apiEndpoint = 'https://tutorial4-api.herokuapp.com/api/users/';
   loginResponse: LoginResponse;
   errorMessage: string;
+  isLoggedIn: boolean = false;
+  redirectUrl: string | null = null;
 
   constructor(private http: HttpClient) { }
 
-  login(email: string, password: string) {
+  public login(email: string, password: string) {
     let postData = {email: email, password: password};
     return this.http.post<LoginResponse>(this.apiEndpoint+'login', postData).pipe(
       catchError(this.handleError));
@@ -29,5 +31,9 @@ export class AuthServiceService {
       this.errorMessage = error.error.message;
     }
     return throwError(this.errorMessage);
+  }
+
+  public loggedIn(loggedIn: boolean){
+    this.isLoggedIn = loggedIn;
   }
 }

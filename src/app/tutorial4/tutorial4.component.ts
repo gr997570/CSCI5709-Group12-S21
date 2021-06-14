@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { AbstractControl, FormBuilder, Validators, FormGroup, ValidatorFn, ValidationErrors } from '@angular/forms';
-import { Router, NavigationExtras } from '@angular/router';
+import { Router } from '@angular/router';
 import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AuthServiceService } from '../services/tutorial4/auth-service.service';
@@ -17,6 +17,7 @@ export class Tutorial4Component implements OnInit {
   loginForm: any;
   loginResponse: LoginResponse;
   errorMessage: string;
+
 
   constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {
     this.loginForm = this.fb.group({
@@ -34,9 +35,11 @@ export class Tutorial4Component implements OnInit {
       if(this.loginResponse?.status){
         this.router.navigate(["/users"]);
       }
+      this.authService.loggedIn(true);
     }, (error: any) => {
       this.errorMessage = error;
       this.loginForm.setErrors({credentialMismatch: true});
+      this.authService.loggedIn(false);
     });
   }
 }

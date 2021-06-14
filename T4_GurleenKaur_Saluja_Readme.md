@@ -58,6 +58,8 @@ The below sources were referred for this tutorial:
 
 2. [Edupala - Angular Filter](https://edupala.com/how-to-implement-an-angular-search-filter-in-angular/)
 
+3. [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)
+
 ### auth-service.service.ts
 Lines 18 - 31
 ---------------
@@ -144,3 +146,37 @@ search(value: string): void {
 - [Edupala - Angular Filter](https://edupala.com/how-to-implement-an-angular-search-filter-in-angular/)'s code was used to refer how to pass data for filtration to a pipe.
 
 - [Edupala - Angular Filter](https://edupala.com/how-to-implement-an-angular-search-filter-in-angular/)'s code was modified by Gurleen Kaur Saluja.
+
+### authguard.guard.ts
+Lines 19 - 25
+---------------
+
+```
+private checkLogin(url: string): true|UrlTree{
+	if (this.authService.isLoggedIn) {
+		return true;
+	}
+	this.authService.redirectUrl = url;
+	return this.router.parseUrl('/tutorial4');
+}
+```
+
+The code above was created by adapting the code in [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards) as shown below: 
+
+```
+checkLogin(url: string): true|UrlTree {
+	if (this.authService.isLoggedIn) { return true; }
+
+	// Store the attempted URL for redirecting
+	this.authService.redirectUrl = url;
+
+	// Redirect to the login page
+	return this.router.parseUrl('/login');
+}
+```
+
+- The code by [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards) was implemented/shared by Angular IO.
+
+- [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)'s code was used to refer how to pass data for filtration to a pipe.
+
+- [Angular Route Guard](https://angular.io/guide/router-tutorial-toh#milestone-5-route-guards)'s code was modified by Gurleen Kaur Saluja.
