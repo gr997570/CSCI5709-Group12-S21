@@ -1,0 +1,28 @@
+<div style="padding: 0 16px;margin: 30px 30% 32px;width: 36vw;">
+  <div style="text-align: center; background-color: #1976D2; width: 32vw; margin: 15px;border-radius: 4px; font-weight: 700 ;padding: 15px; color: aliceblue;">
+    <span>Login Form</span>
+  </div>
+  <div>
+    <form [formGroup]="loginForm" style="padding: 10px;" (ngSubmit)="onSubmit()">
+      <div class="innerDiv">
+        <input type="text" id="email" name="email" formControlName="email" placeholder="Email Id" style="width:33vw;line-height:25px; border-radius: 4px; font-weight: 700;border-color: #B4BCAF;"/>
+        <div *ngIf="(loginForm.get('email').invalid && (loginForm.get('email').touched) || loginForm.get('email').dirty)">
+          <small *ngIf="loginForm.controls['email'].errors?.required" style="color: red;">Email is required</small><br>
+          <small *ngIf="loginForm.controls['email'].errors?.pattern" style="color: red;">Invalid email</small>
+        </div>
+      </div>
+      <div class="innerDiv">
+        <input type="password" id="password" name="password" formControlName="password" placeholder="Password" style="width:33vw;line-height:25px; border-radius: 4px; font-weight: 700;border-color: #B4BCAF;"/>
+        <div *ngIf="(loginForm.get('password').invalid && (loginForm.get('password').touched) || loginForm.get('password').dirty)">
+          <small *ngIf="loginForm.controls['password'].errors?.required" style="color: red;">Password is required</small><br>
+        </div>
+      </div>
+      <div style="padding: 5px;">
+        <small *ngIf="loginForm.errors?.credentialMismatch" style="color:red;">{{errorMessage}}</small>
+      </div>
+      <div style="padding: 5px;">
+        <button type="Submit" [disabled]="!loginForm.valid" style="background-color:#1976D2;color:aliceblue;border-radius:4px;line-height:20px;text-align:center;cursor:pointer;">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
